@@ -1,0 +1,12 @@
+These are the at commands i used to send data to my thingspeak sever
+
+
+AT (attention)
+AT+RST (reset the wifi module)
+AT+CWLAP(list all the available nodes)
+AT+CJWAP(connect to wifi and password)
+AT+CWMODE=1 (connecting to station mode )
+AT+CIPMUX=0 (single connection)
+AT+CIPSTART="tcp","184.106.153.149",80 (this is the ip address of thingspeak server)
+AT+CIPSEND=55 (length of string)
+GET /update?key="apikey"&field1=100/r/n/r/n
